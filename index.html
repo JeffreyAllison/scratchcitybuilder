@@ -20,47 +20,51 @@
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+            <div class="city-pics">
+                <img id="water-img" src="assets/water-1.png" />
+                <img id="city-img" src="assets/city-1.png" />
+                <img id="rural-img" src="assets/rural-1.png" />
+            </div>
+            <div class="counts" id="count-message">
+            </div>
+            <div class="welcome-to">
+                <h3>
+                    Welcome to <span id="city-name"></span>!
+                </h3>
+            </div>
+            <div class="user-inputs">
+                <div class="dropdowns">
+                    <select id="water-dropdown">
+                        <option value="1">Water One</option>
+                        <option value="2">Water Two</option>
+                        <option value="3">Water Three</option>
+                    </select>
+                    <select id="city-dropdown">
+                        <option value="1">City One</option>
+                        <option value="2">City Two</option>
+                        <option value="3">City Three</option>
+                    </select>
+                    <select id="rural-dropdown">
+                        <option value="1">Rural One</option>
+                        <option value="2">Rural Two</option>
+                        <option value="3">Rural Three</option>
+                    </select>
+                </div>
+                <div class="city-name-input-container">
+                    CITY NAME:
+                    <input id="city-name-input" />
+                </div>
+                <div class="slogan-input-container">
+                    CITY SLOGAN:
+                    <input id="slogan-input" />
+                    <button id="add-slogan-button">
+                        Add a city slogan...
+                    </button>
+                </div>
+                <div class="slogan-list" id="list">
+                    SLOGAN LIST:
+                </div>
+            </div>
         </section>
     </main>
     <footer>
