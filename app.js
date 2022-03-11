@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-/*const cityNameInput = document.getElementById('city-name-input');
+const cityNameInput = document.getElementById('city-name-input');
 const cityNameEl = document.getElementById('city-name');
 const waterDropdown = document.getElementById('water-dropdown');
 const cityDropdown = document.getElementById('city-dropdown');
@@ -41,4 +41,4 @@ function displayCitySlogans() {
 }
   // get user input
   // use user input to update state
-  // update DOM to reflect the new state */
+  // update DOM to reflect the new state 
