@@ -19,25 +19,47 @@ const slogans = [];
 
 // set event listeners 
 
-
-
-
-
-
-
 addSloganButton.addEventListener('click', () => {
 
   const citySlogans = sloganInputEl.value;
 
   slogans.push(citySlogans);
 
-  citySloganInput.value = '';
-
   displayCitySlogans();
+
+  sloganInputEl.value = '';
 });
 
+cityNameInput.addEventListener('input', () => {
+
+  cityNameEl.textContent = cityNameInput.value;
+});
+
+waterDropdown.addEventListener('change', () => {
+  waterCount++;
+  waterImgEl.src = `assets/water-${waterDropdown.value}.png`;
+  displayCounterText();
+});
+
+
+function displayCounterText() {
+  counterMessageEl.textContent = `You updated the water image ${waterCount} times, the city image ${cityCount} times, and the rural image ${ruralCount} times`;
+}
+
 function displayCitySlogans() {
-  slogan
+  const citySloganlistEl = document.getElementById('list');
+
+  citySloganlistEl.textContent = '';
+
+  for (let slogan of slogans) {
+    const div = document.createElement('div');
+
+    div.classList.add('slogan');
+    div.textContent = slogan;
+    citySloganlistEl.append(div);
+
+
+  }
 }
   // get user input
   // use user input to update state
