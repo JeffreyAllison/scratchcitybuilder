@@ -64,11 +64,11 @@ function displayCitySlogans() {
   citySloganlistEl.textContent = '';
 
   for (let slogan of slogans) {
-    const div = document.createElement('div');
+    const pTag = document.createElement('p');
 
-    div.classList.add('slogan');
-    div.textContent = slogan;
-    citySloganlistEl.append(div);
+    pTag.classList.add('slogan');
+    pTag.textContent = slogan;
+    citySloganlistEl.append(pTag);
 
 
   }

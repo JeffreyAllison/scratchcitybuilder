@@ -106,22 +106,22 @@ footer {
 }
 
 #water-img {
-    height: 350px;
-    width: 375px;
+    height: 375px;
+    width: 400px;
     border: black;
     border-style:solid
 }
 
 #city-img {
-    height: 350px;
-    width: 450px;
+    height: 375px;
+    width: 500px;
     border: black;
     border-style:solid
 }
 
 #rural-img{
-    height: 350px;
-    width: 550px;
+    height: 375px;
+    width: 600px;
     border: black;
     border-style:solid
 }
