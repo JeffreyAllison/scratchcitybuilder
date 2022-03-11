@@ -57,10 +57,10 @@ main {
 section {
     background-color: var(--color5);
     width: 95%;
-    /*display: flex;*/
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
@@ -98,7 +98,7 @@ footer {
 .city-pics {
     height: 300px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
 }
 
 .city-pics {
@@ -126,18 +126,15 @@ footer {
     border-style:solid
 }
 
-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-}
-
 .main-section {
-    align-content: right;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .user-inputs {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 3fr 3fr;
 }
