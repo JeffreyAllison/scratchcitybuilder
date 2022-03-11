@@ -3,10 +3,10 @@ body {
     /* feel free to update these css variables for a quick theme */
     
     --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color2: rgb(121, 190, 175);
+    --color3: rgb(94, 76, 141);
+    --color4: rgba(144, 185, 121, 0);
+    --color5: rgb(162, 204, 158);
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -39,10 +39,25 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
-section {
+/*section {
     background-color: var(--color5);
     max-width: 80%;
     display: flex;
+    flex-direction: column;
+    justify-content:flex;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+    border: solid 2px var(--color1); 
+}*/
+
+
+section {
+    background-color: var(--color5);
+    width: 95%;
+    /*display: flex;*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -50,7 +65,7 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px black;
 }
 
 header {
@@ -61,12 +76,6 @@ header {
     box-shadow: var(--shadow);
 }
 
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
 .gutter-right {
     margin-right: 20px;
 }
@@ -75,10 +84,6 @@ header img {
     height: var(--header-height);
 }
 
-p {
-    margin: var(--gutter);
-}
-  
 footer {
     position: fixed;
     width: 100%;
@@ -88,4 +93,51 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.city-pics {
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.city-pics {
+    height: 2px;
+}
+
+#water-img {
+    height: 300px;
+    width: 300px;
+    border: black;
+    border-style:solid
+}
+
+#city-img {
+    height: 300px;
+    width: 300px;
+    border: black;
+    border-style:solid
+}
+
+#rural-img{
+    height: 300px;
+    width: 300px;
+    border: black;
+    border-style:solid
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.main-section {
+    align-content: right;
+}
+
+.user-inputs {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
